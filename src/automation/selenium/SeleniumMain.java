@@ -13,8 +13,9 @@ public class SeleniumMain {
 		
 		
 		/* code for test browser */
-		TestLaunchDemo.testLaunch(driver);
+		//TestLaunchDemo.testLaunch(driver);
 		
-
+		/* code for Practice1 */
+		WaitExcerisePracticeDemo.WaitExcerisePractice(driver);
 	}
 }

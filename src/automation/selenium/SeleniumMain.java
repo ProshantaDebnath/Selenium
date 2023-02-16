@@ -12,10 +12,13 @@ public class SeleniumMain {
 		WebDriver driver = new EdgeDriver();
 		
 		
-		/* code for test browser */
+		/* 1.code for test browser */
 		//TestLaunchDemo.testLaunch(driver);
 		
-		/* code for Practice1 */
-		WaitExcerisePracticeDemo.WaitExcerisePractice(driver);
+		/* 2.code for Practice1 */
+		//WaitExcerisePracticeDemo.WaitExcerisePractice(driver);
+		
+		/* 3.code for MouseInteraction */
+		MouseInteractionDemo.MouseInteraction(driver);
 	}
 }

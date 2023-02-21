@@ -19,6 +19,9 @@ public class SeleniumMain {
 		//WaitExcerisePracticeDemo.WaitExcerisePractice(driver);
 		
 		/* 3.code for MouseInteraction */
-		MouseInteractionDemo.MouseInteraction(driver);
+		//MouseInteractionDemo.MouseInteraction(driver);
+		
+		/* code for Window handle */
+		WindowHandleDemo.windowHandler(driver);
 	}
 }

@@ -1,15 +1,19 @@
 package automation.selenium;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SeleniumMain {
 	public static void main(String[] args) throws InterruptedException{
 
-		System.setProperty("webdriver.edge.driver",
-				"C:\\Users\\Proshanta\\Desktop\\Selenium Project\\MicrosoftEdgeDriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Proshanta\\Desktop\\Selenium Project\\chromedriver.exe");
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
 
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver(options);
 		
 		
 		/* 1.code for test browser */
@@ -21,7 +25,13 @@ public class SeleniumMain {
 		/* 3.code for MouseInteraction */
 		//MouseInteractionDemo.MouseInteraction(driver);
 		
-		/* code for Window handle */
-		WindowHandleDemo.windowHandler(driver);
+		/* 4.code for Window handle */
+		//WindowHandleDemo.windowHandler(driver);
+		
+		/* 4.Relative loactor selenium 4 features*/
+		RelativeLocator.RelativeLocatorDemo(driver);
+		
+		
+		
 	}
 }

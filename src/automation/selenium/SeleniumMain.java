@@ -1,5 +1,7 @@
 package automation.selenium;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -28,10 +30,15 @@ public class SeleniumMain {
 		/* 4.code for Window handle */
 		//WindowHandleDemo.windowHandler(driver);
 		
-		/* 4.Relative loactor selenium 4 features*/
-		RelativeLocator.RelativeLocatorDemo(driver);
+		/* 5.Relative loactor selenium 4 features*/
+		//RelativeLocator.RelativeLocatorDemo(driver);
 		
-		
+		/* 6.Taking WebElements Partial Screenshots*/
+		try {
+			TakingWebElementPartialScreenshots.TakingWebElementPartialScreenshotsDemo(driver);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 }

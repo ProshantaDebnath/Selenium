@@ -34,11 +34,14 @@ public class SeleniumMain {
 		//RelativeLocator.RelativeLocatorDemo(driver);
 		
 		/* 6.Taking WebElements Partial Screenshots*/
-		try {
-			TakingWebElementPartialScreenshots.TakingWebElementPartialScreenshotsDemo(driver);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			TakingWebElementPartialScreenshots.TakingWebElementPartialScreenshotsDemo(driver);
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+		
+		/* 7.Capturing Heights and Width of WebElements*/
+		CapturingHeightAndWidthWebElements.CapturingHeightAndWidthWebElementsDemo(driver);
 		
 	}
 }

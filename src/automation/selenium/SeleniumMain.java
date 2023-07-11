@@ -1,7 +1,5 @@
 package automation.selenium;
 
-import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -41,7 +39,10 @@ public class SeleniumMain {
 //		}
 		
 		/* 7.Capturing Heights and Width of WebElements*/
-		CapturingHeightAndWidthWebElements.CapturingHeightAndWidthWebElementsDemo(driver);
+		//CapturingHeightAndWidthWebElements.CapturingHeightAndWidthWebElementsDemo(driver);
+		
+		/* 8.Java stream operations*/
+		JavaStream.JavaStreamDemo();
 		
 	}
 }

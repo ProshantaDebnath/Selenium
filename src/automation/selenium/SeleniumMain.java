@@ -42,7 +42,10 @@ public class SeleniumMain {
 		//CapturingHeightAndWidthWebElements.CapturingHeightAndWidthWebElementsDemo(driver);
 		
 		/* 8.Java stream operations*/
-		JavaStream.JavaStreamDemo();
+		//JavaStream.JavaStreamDemo();
+		
+		/*Web Table Sorting*/
+		WebTableSorting.webTableSortingDemo(driver);
 		
 	}
 }

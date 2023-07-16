@@ -40,4 +40,16 @@ public class WebTableSorting {
 		String priceValue = s.findElement(By.xpath("following-sibling::td[1]")).getText();
 		return priceValue;
 	}
+	
+	
+	/* Testing Search bar is working or not*/
+	public static void filtered(WebDriver driver) {
+		 driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+		 driver.findElement(By.id("search-field")).sendKeys("Rice");
+		 List<WebElement> veggies = driver.findElements(By.xpath("//tr/td[1]"));
+		 List<WebElement> filteredList = veggies.stream().filter(veggie->veggie.getText().contains("Rice")).collect(Collectors.toList());
+		 if(veggies.size() == filteredList.size()){
+			 System.out.println("Search is working");
+		 };
+	}
 }

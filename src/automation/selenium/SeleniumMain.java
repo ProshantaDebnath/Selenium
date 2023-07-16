@@ -45,7 +45,8 @@ public class SeleniumMain {
 		//JavaStream.JavaStreamDemo();
 		
 		/*Web Table Sorting*/
-		WebTableSorting.webTableSortingDemo(driver);
+		//WebTableSorting.webTableSortingDemo(driver);
+		WebTableSorting.filtered(driver);
 		
 	}
 }
